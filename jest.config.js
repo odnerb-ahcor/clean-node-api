@@ -3,7 +3,12 @@ module.exports = {
   collectCoverageFrom: ['<rootDir>/src/**/*.ts'],
   coverageDirectory: 'coverage',
   testEnvironment: 'node',
-  transforn: {
+  transform: {
     '.+\\.ts$': 'ts-jest'
+  },
+  global: {
+    'ts-jest': {
+      isolatedModules: true
+    }
   }
 }
