@@ -6,7 +6,7 @@ module.exports = {
   transform: {
     '.+\\.ts$': 'ts-jest'
   },
-  global: {
+  globals: {
     'ts-jest': {
       isolatedModules: true
     }
